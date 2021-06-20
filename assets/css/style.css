@@ -1,0 +1,80 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: lightblue;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.piano {
+    display: flex;
+    flex-direction: column;
+}
+
+.piano-key {
+    display: flex;
+}
+
+.piano-music {
+    margin-top: 40px;
+}
+
+.piano-music--content {
+    margin-bottom: 20px;
+}
+
+.piano-music--song {
+    user-select: none;
+    display: inline-block;
+    background-color: lightcoral;
+    border-radius: 3px;
+    padding: 8px 16px;
+}
+
+.piano-music--song:hover {
+    cursor: pointer;
+    filter: brightness(110%);
+}
+
+.key {
+    cursor: pointer;
+}
+
+.key.white {
+    height: 300px;
+    width: 50px;
+    background-color: white;
+    border: 1px solid black;
+}
+
+.key--playing.white {
+    background-color: #ccc;
+}
+
+
+.key.black {
+    height: 240px;
+    width: 30px;
+    background-color: black;
+    margin-left: -15px;
+    margin-right: -15px;
+    z-index: 1;
+}
+
+.key--playing.black {
+    background-color: #333;
+}
+
+.key.primary {
+    background-color: lightgoldenrodyellow;
+}
+
+.key--playing.primary {    
+    filter:brightness(80%)
+}
